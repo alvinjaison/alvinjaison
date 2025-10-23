@@ -26,9 +26,7 @@ I'm a passionate DevOps Engineer specializing in cloud infrastructure and automa
 
 ### ☁️ Cloud Platforms
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Amazon EC2](https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=amazon-ec2&logoColor=white)
-![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)
-![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=for-the-badge&logo=aws-lambda&logoColor=white)
+![Azure](https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=amazon-ec2&logoColor=white)
 
 ### 🏗️ Infrastructure as Code
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
@@ -129,14 +127,14 @@ expertise:
 I'm always interested in discussing DevOps practices, cloud architecture, or potential collaboration opportunities.
 
 - 💼 **LinkedIn:** [linkedin.com/in/alvinjaison](https://linkedin.com/in/alvinjaison)
-- 📧 **Email:** alvinjaison@example.com
+
 - 🐙 **GitHub:** You're already here!
 
 ---
 
 <div align="center">
 
-### ⚡ "Automate everything, monitor everything, improve everything."
+### ⚡ "If you do it twice, automate it."
 
 ![Profile Views](https://komarev.com/ghpvc/?username=alvinjaison&color=blueviolet&style=for-the-badge)
 
