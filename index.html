@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin Jaison — DevOps Engineer</title>
+    <meta name="description" content="Alvin Jaison - DevOps Engineer & Cloud Infrastructure Specialist based in London, UK.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        /* Hero */
+        .hero {
+            margin-bottom: 48px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .hero .subtitle {
+            font-size: 18px;
+            color: #8b949e;
+            margin-bottom: 4px;
+        }
+        .hero .location {
+            font-size: 14px;
+            color: #6e7681;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .social-links a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        .social-links a:hover { color: #79c0ff; }
+
+        /* Sections */
+        section {
+            margin-bottom: 48px;
+        }
+        section h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #e6edf3;
+        }
+        section p {
+            color: #8b949e;
+            font-size: 15px;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .skill-group h3 {
+            font-size: 13px;
+            font-weight: 500;
+            color: #6e7681;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .skill-tag {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #8b949e;
+        }
+
+        /* Projects */
+        .project-card {
+            background: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+        .project-card:hover { border-color: #30363d; }
+        .project-card h3 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .project-card h3 a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .project-card h3 a:hover { text-decoration: underline; }
+        .project-card p {
+            font-size: 14px;
+            color: #8b949e;
+            margin-bottom: 10px;
+        }
+        .project-card .role {
+            font-size: 12px;
+            color: #6e7681;
+        }
+        .project-tech {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .project-tech span {
+            font-size: 12px;
+            color: #6e7681;
+            background: #0d1117;
+            border: 1px solid #21262d;
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+
+        /* Footer */
+        footer {
+            padding-top: 32px;
+            border-top: 1px solid #21262d;
+            color: #484f58;
+            font-size: 13px;
+        }
+
+        @media (max-width: 640px) {
+            .container { padding: 40px 16px; }
+            .hero h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>Alvin Jaison</h1>
+            <p class="subtitle">DevOps Engineer &amp; Cloud Infrastructure Specialist</p>
+            <p class="location">London, United Kingdom</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/alvinjaison">LinkedIn</a>
+                <a href="https://github.com/alvinjaison">GitHub</a>
+                <a href="mailto:alvinjaison@outlook.com">Email</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About</h2>
+            <p>
+                DevOps Engineer specializing in cloud infrastructure and automation.
+                I build scalable, reliable, and secure systems — bridging development and operations
+                through infrastructure as code and continuous improvement.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">CloudFormation</span>
+                        <span class="skill-tag">Ansible</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Containers</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Helm</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>CI/CD</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">ArgoCD</span>
+                        <span class="skill-tag">GitLab CI</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Monitoring</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Datadog</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Go</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3><a href="https://owldisk.com">OwlDisk</a></h3>
+                <p>A fast, open-source disk space analyzer for macOS. Parallel scanning with interactive sunburst visualization.</p>
+                <div class="project-tech">
+                    <span>Go</span>
+                    <span>Wails</span>
+                    <span>React</span>
+                    <span>D3.js</span>
+                </div>
+                <p class="role">Author &amp; Maintainer</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Alvin Jaison &mdash; jaisonalv.in</p>
+        </footer>
+    </div>
+</body>
+</html>
