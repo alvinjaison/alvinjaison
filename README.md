@@ -98,6 +98,22 @@ expertise:
 
 ---
 
+## 🦉 Open Source
+
+### [OwlDisk](https://owldisk.com) — Fast Disk Space Analyzer for macOS
+
+> Author & Maintainer
+
+A fast, open-source disk space analyzer built with Go and Wails. Features parallel scanning with 64 concurrent goroutines, an interactive D3 sunburst visualization, and accurate size reporting that matches macOS Finder.
+
+[![OwlDisk](https://img.shields.io/badge/OwlDisk-Download-238636?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/owldisk/owldisk/releases)
+[![Source](https://img.shields.io/badge/Source-GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/owldisk/owldisk)
+[![Website](https://img.shields.io/badge/Website-owldisk.com-58a6ff?style=for-the-badge&logo=safari&logoColor=white)](https://owldisk.com)
+
+**Tech:** `Go` `Wails` `React` `TypeScript` `D3.js` `Tailwind CSS`
+
+---
+
 ## 📈 GitHub Stats
 
 <div align="center">
