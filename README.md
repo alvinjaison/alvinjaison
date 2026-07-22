@@ -117,10 +117,6 @@ A fast, open-source disk space analyzer built with Go and Wails. Features parall
 ## 📈 GitHub Stats
 
 <div align="center">
-  
-![Alvin's GitHub stats](https://github-readme-stats.vercel.app/api?username=alvinjaison&show_icons=true&theme=radical&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alvinjaison&layout=compact&theme=radical&hide_border=true)
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=alvinjaison&theme=radical&hide_border=true)
 
