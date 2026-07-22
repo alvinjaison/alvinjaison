@@ -1,265 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alvin Jaison — DevOps Engineer</title>
-    <meta name="description" content="Alvin Jaison - DevOps Engineer & Cloud Infrastructure Specialist based in London, UK.">
-    <link rel="icon" href="https://github.com/alvinjaison.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #0a0a0a;
-            color: #fafafa;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-
-        .page {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 80px 32px;
-        }
-
-        /* Hero - centered with photo */
-        .hero {
-            text-align: center;
-            margin-bottom: 80px;
-        }
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 24px;
-            border: 3px solid rgba(255,255,255,0.1);
-        }
-        .hero h1 {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
-        .hero .tagline {
-            font-size: 16px;
-            color: #a1a1aa;
-            font-weight: 400;
-            margin-bottom: 4px;
-        }
-        .hero .location {
-            font-size: 14px;
-            color: #52525b;
-            margin-bottom: 20px;
-        }
-        .hero-links {
-            display: flex;
-            gap: 24px;
-            justify-content: center;
-        }
-        .hero-links a {
-            color: #a1a1aa;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 6px 0;
-            border-bottom: 1px solid transparent;
-            transition: all 0.2s;
-        }
-        .hero-links a:hover {
-            color: #fafafa;
-            border-bottom-color: #fafafa;
-        }
-
-        /* Two-column layout for main content */
-        .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 64px;
-        }
-
-        .section-label {
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #52525b;
-            margin-bottom: 20px;
-        }
-
-        /* About */
-        .about p {
-            font-size: 15px;
-            color: #a1a1aa;
-            line-height: 1.8;
-        }
-
-        /* Skills */
-        .skill-line {
-            display: flex;
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
-        }
-        .skill-line:last-child { border-bottom: none; }
-        .skill-label {
-            font-size: 13px;
-            color: #52525b;
-            width: 90px;
-            flex-shrink: 0;
-            font-weight: 500;
-        }
-        .skill-value {
-            font-size: 14px;
-            color: #d4d4d8;
-        }
-
-        /* Projects - full width below */
-        .projects-section {
-            grid-column: 1 / -1;
-            margin-top: 24px;
-        }
-        .project-card {
-            border: 1px solid rgba(255,255,255,0.06);
-            border-radius: 16px;
-            padding: 28px 32px;
-            background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.01) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-            transition: border-color 0.3s, transform 0.2s;
-        }
-        .project-card:hover {
-            border-color: rgba(255,255,255,0.12);
-            transform: translateY(-2px);
-        }
-        .project-info h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-        .project-info h3 a {
-            color: #fafafa;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        .project-info h3 a:hover { color: #60a5fa; }
-        .project-info p {
-            font-size: 14px;
-            color: #71717a;
-            margin-bottom: 12px;
-        }
-        .project-stack {
-            display: flex;
-            gap: 8px;
-        }
-        .project-stack span {
-            font-size: 11px;
-            font-weight: 500;
-            color: #71717a;
-            background: rgba(255,255,255,0.05);
-            padding: 4px 10px;
-            border-radius: 4px;
-        }
-        .project-role {
-            font-size: 12px;
-            color: #52525b;
-            background: rgba(255,255,255,0.04);
-            padding: 6px 14px;
-            border-radius: 20px;
-            white-space: nowrap;
-            font-weight: 500;
-        }
-
-        /* Footer */
-        .footer {
-            margin-top: 80px;
-            text-align: center;
-            font-size: 12px;
-            color: #3f3f46;
-        }
-
-        @media (max-width: 700px) {
-            .page { padding: 60px 20px; }
-            .hero h1 { font-size: 28px; }
-            .content { grid-template-columns: 1fr; gap: 48px; }
-            .projects-section { grid-column: 1; }
-            .project-card { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvin Jaison | DevOps Engineer</title>
+  <meta name="description" content="Alvin Jaison - DevOps Engineer & Cloud Infrastructure Specialist based in London, UK">
+  <meta property="og:title" content="Alvin Jaison | DevOps Engineer & Cloud Architect">
+  <meta property="og:description" content="DevOps Engineer specializing in cloud infrastructure, automation, and building self-healing systems at scale. Based in London, UK.">
+  <meta property="og:image" content="https://github.com/alvinjaison.png">
+  <meta property="og:url" content="https://jaisonalv.in">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Alvin Jaison | DevOps Engineer & Cloud Architect">
+  <meta name="twitter:description" content="DevOps Engineer specializing in cloud infrastructure, automation, and building self-healing systems at scale.">
+  <meta name="twitter:image" content="https://github.com/alvinjaison.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alvin Jaison",
+    "url": "https://jaisonalv.in",
+    "image": "https://github.com/alvinjaison.png",
+    "jobTitle": "DevOps Engineer",
+    "worksFor": { "@type": "Organization", "name": "Self" },
+    "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "UK" },
+    "sameAs": [
+      "https://linkedin.com/in/alvinjaison",
+      "https://github.com/alvinjaison"
+    ],
+    "knowsAbout": ["DevOps", "Cloud Infrastructure", "AWS", "Terraform", "Kubernetes", "Docker", "CI/CD", "Infrastructure as Code"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-card: #1e293b;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #7dd3fc;
+      --border: #334155;
+      --gradient-start: #38bdf8;
+      --gradient-end: #818cf8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+    }
+    nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo {
+      font-size: 1.25rem; font-weight: 700;
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-toggle { display: none; background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; }
+    .hero {
+      min-height: 100vh; display: flex; align-items: center;
+      padding-top: 5rem; position: relative;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(ellipse at 50% 0%, rgba(56,189,248,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .hero-text h1 { font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .hero-text h1 span {
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-text .subtitle { font-size: 1.25rem; color: var(--accent); font-weight: 500; margin-bottom: 1rem; }
+    .hero-text .location { color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .hero-text p { color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 2rem; }
+    .hero-text .mission { border-left: 3px solid var(--accent); padding-left: 1rem; margin-bottom: 2rem; font-size: 0.95rem; font-style: italic; color: var(--text-secondary); }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.75rem 1.5rem; border-radius: 8px;
+      font-size: 0.9rem; font-weight: 500;
+      text-decoration: none; transition: all 0.3s; cursor: pointer; border: none;
+    }
+    .btn-primary { background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); color: var(--bg-primary); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(56,189,248,0.3); }
+    .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text-primary); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .hero-visual { display: flex; justify-content: center; align-items: center; }
+    .terminal {
+      background: var(--bg-secondary); border: 1px solid var(--border);
+      border-radius: 12px; padding: 0; width: 100%; max-width: 450px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .terminal-header { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+    .terminal-dot { width: 12px; height: 12px; border-radius: 50%; }
+    .terminal-dot.red { background: #ef4444; }
+    .terminal-dot.yellow { background: #eab308; }
+    .terminal-dot.green { background: #22c55e; }
+    .terminal-body { padding: 1.25rem; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; line-height: 1.8; }
+    .terminal-body .prompt { color: var(--accent); }
+    .terminal-body .command { color: var(--text-primary); }
+    .terminal-body .output { color: var(--text-secondary); }
+    .terminal-body .success { color: #22c55e; }
+    section { padding: 5rem 0; }
+    .section-header { text-align: center; margin-bottom: 3.5rem; }
+    .section-header h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .section-header p { color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+    .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .tech-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.3s; }
+    .tech-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    .tech-card h3 { font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tech-tag { background: rgba(56,189,248,0.1); border: 1px solid rgba(56,189,248,0.2); color: var(--accent); padding: 0.3rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; }
+    .competency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .competency-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; transition: all 0.3s; position: relative; overflow: hidden; }
+    .competency-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)); opacity: 0; transition: opacity 0.3s; }
+    .competency-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+    .competency-card:hover::before { opacity: 1; }
+    .competency-card h3 { font-size: 1.05rem; margin-bottom: 1rem; }
+    .competency-card ul { list-style: none; }
+    .competency-card li { color: var(--text-secondary); padding: 0.35rem 0; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+    .competency-card li::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    .passions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .passion-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start; transition: all 0.3s; }
+    .passion-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .passion-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .passion-item h4 { font-size: 0.95rem; margin-bottom: 0.3rem; }
+    .passion-item p { color: var(--text-secondary); font-size: 0.85rem; }
+    .profile-photo { width: 180px; height: 180px; border-radius: 50%; border: 3px solid var(--border); object-fit: cover; box-shadow: 0 10px 40px rgba(0,0,0,0.3); transition: all 0.3s; }
+    .profile-photo:hover { border-color: var(--accent); box-shadow: 0 10px 40px rgba(56,189,248,0.2); transform: scale(1.02); }
+    .hero-visual-wrapper { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+    .certs-strip { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    .cert-badge { display: flex; align-items: center; gap: 0.75rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; transition: all 0.3s; text-decoration: none; color: inherit; }
+    .cert-badge:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+    .cert-icon { font-size: 1.75rem; flex-shrink: 0; }
+    .cert-icon-svg { flex-shrink: 0; }
+    .cert-info h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.15rem; }
+    .cert-info p { font-size: 0.75rem; color: var(--text-secondary); }
+    .highlights-list { max-width: 750px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+    .highlight-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; align-items: flex-start; gap: 1rem; transition: all 0.3s; }
+    .highlight-item:hover { border-color: var(--accent); transform: translateX(4px); }
+    .highlight-item .highlight-icon { color: var(--accent); font-size: 1.25rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .highlight-item p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; }
+    .highlight-item strong { color: var(--text-primary); }
+    .opensource-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; max-width: 750px; margin: 0 auto; transition: all 0.3s; position: relative; overflow: hidden; }
+    .opensource-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)); }
+    .opensource-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    .opensource-card h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+    .opensource-card h3 a { color: var(--text-primary); text-decoration: none; transition: color 0.3s; }
+    .opensource-card h3 a:hover { color: var(--accent); }
+    .opensource-card .role { color: var(--accent); font-size: 0.85rem; font-weight: 500; margin-bottom: 1rem; }
+    .opensource-card .description { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem; line-height: 1.7; }
+    .contact-section { text-align: center; }
+    .contact-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem; }
+    .contact-link { display: flex; align-items: center; gap: 0.75rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; text-decoration: none; color: var(--text-primary); transition: all 0.3s; }
+    .contact-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+    .contact-link .icon { font-size: 1.25rem; }
+    .contact-link span { font-size: 0.9rem; font-weight: 500; }
+    footer { border-top: 1px solid var(--border); padding: 2rem 0; text-align: center; color: var(--text-secondary); font-size: 0.85rem; }
+    @media (max-width: 768px) {
+      .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+      .hero-text h1 { font-size: 2.25rem; }
+      .hero-buttons { justify-content: center; }
+      .hero-visual { order: -1; }
+      .terminal { max-width: 350px; }
+      .nav-links { display: none; }
+      .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: rgba(15,23,42,0.95); backdrop-filter: blur(12px); padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border); }
+      .nav-toggle { display: block; }
+      .section-header h2 { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-    <div class="page">
-        <header class="hero">
-            <img src="https://github.com/alvinjaison.png" alt="Alvin Jaison" class="avatar">
-            <h1>Alvin Jaison</h1>
-            <p class="tagline">DevOps Engineer &amp; Cloud Infrastructure Specialist</p>
-            <p class="location">London, United Kingdom</p>
-            <div class="hero-links">
-                <a href="https://linkedin.com/in/alvinjaison">LinkedIn</a>
-                <a href="https://github.com/alvinjaison">GitHub</a>
-                <a href="mailto:alvinjaison@outlook.com">Email</a>
-            </div>
-        </header>
-
-        <div class="content">
-            <section class="about">
-                <div class="section-label">About</div>
-                <p>
-                    I build scalable cloud infrastructure and automate everything that should be automated.
-                    Focused on AWS, Kubernetes, and GitOps — helping teams ship faster with confidence.
-                </p>
-            </section>
-
-            <section class="skills">
-                <div class="section-label">Expertise</div>
-                <div class="skill-line">
-                    <span class="skill-label">Cloud</span>
-                    <span class="skill-value">AWS, Azure</span>
-                </div>
-                <div class="skill-line">
-                    <span class="skill-label">IaC</span>
-                    <span class="skill-value">Terraform, CloudFormation, Ansible</span>
-                </div>
-                <div class="skill-line">
-                    <span class="skill-label">Containers</span>
-                    <span class="skill-value">Docker, Kubernetes, Helm</span>
-                </div>
-                <div class="skill-line">
-                    <span class="skill-label">CI/CD</span>
-                    <span class="skill-value">GitHub Actions, ArgoCD, Jenkins</span>
-                </div>
-                <div class="skill-line">
-                    <span class="skill-label">Monitoring</span>
-                    <span class="skill-value">Prometheus, Grafana, Datadog</span>
-                </div>
-                <div class="skill-line">
-                    <span class="skill-label">Languages</span>
-                    <span class="skill-value">Python, Go, Bash</span>
-                </div>
-            </section>
-
-            <section class="projects-section">
-                <div class="section-label">Projects</div>
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3><a href="https://owldisk.com">OwlDisk</a></h3>
-                        <p>Fast, open-source disk space analyzer for macOS with interactive sunburst visualization.</p>
-                        <div class="project-stack">
-                            <span>Go</span>
-                            <span>Wails</span>
-                            <span>React</span>
-                            <span>D3.js</span>
-                        </div>
-                    </div>
-                    <span class="project-role">Author &amp; Maintainer</span>
-                </div>
-            </section>
-        </div>
-
-        <footer class="footer">
-            jaisonalv.in
-        </footer>
+  <nav>
+    <div class="container">
+      <a href="#" class="nav-logo">AJ</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#competencies">Competencies</a></li>
+        <li><a href="#opensource">Open Source</a></li>
+        <li><a href="#passions">Principles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     </div>
+  </nav>
+
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Alvin Jaison</span></h1>
+          <p class="subtitle">DevOps Engineer | IaC Evangelist | Cloud Architect</p>
+          <p class="location">&#128205; London, United Kingdom</p>
+          <p>I turn infrastructure into code, chaos into pipelines, and coffee into uptime. Specializing in cloud architecture and automation, I build systems that scale themselves, heal themselves, and let teams ship faster without the 3 a.m. pages. When I'm not wrangling clusters, I'm building applications that solve real problems.</p>
+          <p class="mission">Bridging the gap between development and operations through automation, infrastructure as code, and continuous improvement.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            <a href="#tech" class="btn btn-outline">View My Stack</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-visual-wrapper">
+            <img src="https://github.com/alvinjaison.png" alt="Alvin Jaison" class="profile-photo" width="180" height="180" loading="lazy">
+            <div class="terminal">
+              <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+              </div>
+              <div class="terminal-body">
+                <div><span class="prompt">$</span> <span class="command">whoami</span></div>
+                <div><span class="output">alvin.jaison</span></div>
+                <br>
+                <div><span class="prompt">$</span> <span class="command">cat role.txt</span></div>
+                <div><span class="output">DevOps Engineer</span></div>
+                <br>
+                <div><span class="prompt">$</span> <span class="command">terraform plan</span></div>
+                <div><span class="success">&#10003; Infrastructure ready</span></div>
+                <br>
+                <div><span class="prompt">$</span> <span class="command">kubectl get pods</span></div>
+                <div><span class="success">&#10003; All systems running</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech">
+    <div class="container">
+      <div class="section-header">
+        <h2>Technology Stack</h2>
+        <p>The tools and platforms I use to build and manage infrastructure</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card"><h3>&#9729;&#65039; Cloud Platforms</h3><div class="tech-tags"><span class="tech-tag">AWS</span><span class="tech-tag">Azure</span><span class="tech-tag">GCP</span><span class="tech-tag">EC2</span><span class="tech-tag">EKS</span><span class="tech-tag">Lambda</span><span class="tech-tag">S3</span><span class="tech-tag">VPC</span></div></div>
+        <div class="tech-card"><h3>&#127959;&#65039; Infrastructure as Code</h3><div class="tech-tags"><span class="tech-tag">Terraform</span><span class="tech-tag">Terraform Modules</span><span class="tech-tag">CloudFormation</span><span class="tech-tag">Ansible</span><span class="tech-tag">Pulumi</span></div></div>
+        <div class="tech-card"><h3>&#128051; Containerization & Orchestration</h3><div class="tech-tags"><span class="tech-tag">Docker</span><span class="tech-tag">Kubernetes</span><span class="tech-tag">Helm</span><span class="tech-tag">ECS</span><span class="tech-tag">Kustomize</span></div></div>
+        <div class="tech-card"><h3>&#128260; CI/CD</h3><div class="tech-tags"><span class="tech-tag">GitHub Actions</span><span class="tech-tag">Jenkins</span><span class="tech-tag">GitLab CI</span><span class="tech-tag">ArgoCD</span><span class="tech-tag">FluxCD</span></div></div>
+        <div class="tech-card"><h3>&#128274; Networking & Security</h3><div class="tech-tags"><span class="tech-tag">VPC Design</span><span class="tech-tag">IAM</span><span class="tech-tag">WAF</span><span class="tech-tag">Secrets Manager</span><span class="tech-tag">HashiCorp Vault</span><span class="tech-tag">mTLS</span></div></div>
+        <div class="tech-card"><h3>&#128039; Operating Systems</h3><div class="tech-tags"><span class="tech-tag">Linux</span><span class="tech-tag">Ubuntu</span><span class="tech-tag">CentOS</span><span class="tech-tag">Amazon Linux</span></div></div>
+        <div class="tech-card"><h3>&#128200; Monitoring & Observability</h3><div class="tech-tags"><span class="tech-tag">Prometheus</span><span class="tech-tag">Grafana</span><span class="tech-tag">Datadog</span><span class="tech-tag">ELK Stack</span><span class="tech-tag">CloudWatch</span><span class="tech-tag">OpenTelemetry</span></div></div>
+        <div class="tech-card"><h3>&#128295; Scripting & Languages</h3><div class="tech-tags"><span class="tech-tag">Bash</span><span class="tech-tag">Python</span><span class="tech-tag">Go</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Git</span><span class="tech-tag">GitHub</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competencies">
+    <div class="container">
+      <div class="section-header"><h2>Core Competencies</h2><p>Key areas of expertise and specialization</p></div>
+      <div class="competency-grid">
+        <div class="competency-card"><h3>&#9729;&#65039; Cloud Infrastructure</h3><ul><li>Multi-region, highly available architectures on AWS</li><li>Well-Architected Framework reviews & remediation</li><li>Cloud spend optimization through rightsizing & spot strategies</li><li>Landing zone design for multi-account environments</li></ul></div>
+        <div class="competency-card"><h3>&#9881;&#65039; Automation</h3><ul><li>Provisioning reduced from days to minutes via modular Terraform</li><li>Configuration drift detection & auto-remediation</li><li>Self-healing infrastructure with auto-scaling & health checks</li><li>Runbook automation eliminating repetitive toil</li></ul></div>
+        <div class="competency-card"><h3>&#128051; Containerization</h3><ul><li>Production Kubernetes clusters with zero-downtime rollouts</li><li>Microservices decomposition & service mesh integration</li><li>Container image hardening & vulnerability scanning</li><li>Helm chart libraries for standardized deployments</li></ul></div>
+        <div class="competency-card"><h3>&#128260; CI/CD Pipelines</h3><ul><li>End-to-end GitOps workflows with ArgoCD & FluxCD</li><li>Pipeline optimization through caching & parallelization</li><li>Progressive delivery with canary & blue-green strategies</li><li>Shift-left security with automated SAST/DAST gates</li></ul></div>
+        <div class="competency-card"><h3>&#128039; Linux & Reliability</h3><ul><li>Production Linux administration & performance tuning</li><li>Observability-driven operations with SLIs/SLOs</li><li>Incident response & post-mortem culture</li><li>Security hardening & compliance automation</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights">
+    <div class="container">
+      <div class="section-header"><h2>Career Highlights</h2><p>Key achievements and impact delivered across organizations</p></div>
+      <div class="highlights-list">
+        <div class="highlight-item"><span class="highlight-icon">&#9889;</span><p><strong>Architected multi-account AWS landing zones</strong> with centralized governance, enabling engineering teams to self-service infrastructure securely</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#9889;</span><p><strong>Led monolith-to-microservices migration</strong> onto Kubernetes, improving deployment frequency from monthly to multiple times per day</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#9889;</span><p><strong>Reduced CI/CD pipeline execution times by 70%</strong> through intelligent caching, parallelization, and infrastructure optimization</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#9889;</span><p><strong>Implemented comprehensive observability stack</strong> with custom dashboards and alerting, reducing mean time to detection (MTTD) significantly</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#9889;</span><p><strong>Designed disaster recovery strategies</strong> with automated failover across regions, achieving RPO/RTO targets for business-critical workloads</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header"><h2>Certifications</h2><p>Industry-recognized credentials validating cloud and infrastructure expertise</p></div>
+      <div class="certs-strip">
+        <a href="https://www.credly.com/badges/2e4b0314-a27e-42b6-902d-140cf8ed47b8" target="_blank" rel="noopener noreferrer" class="cert-badge">
+          <span class="cert-icon">&#9729;&#65039;</span>
+          <div class="cert-info"><h4>AWS Certified Solutions Architect</h4><p>Associate — Cloud Architecture</p></div>
+        </a>
+        <a href="https://www.credly.com/badges/b46592fb-f6e5-46c3-af85-959fe2292393" target="_blank" rel="noopener noreferrer" class="cert-badge">
+          <svg class="cert-icon-svg" width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.7 5.6L45.9 12.7V27L33.7 34.1L21.5 27V12.7L33.7 5.6Z" fill="#7B42BC"/><path d="M18.2 29.4L30.4 36.5V50.8L18.2 57.9L6 50.8V36.5L18.2 29.4Z" fill="#7B42BC"/><path d="M49.2 29.4L61.4 36.5V50.8L49.2 57.9L37 50.8V36.5L49.2 29.4Z" fill="#7B42BC"/></svg>
+          <div class="cert-info"><h4>HashiCorp Certified: Terraform Associate</h4><p>Infrastructure as Code</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="opensource">
+    <div class="container">
+      <div class="section-header"><h2>&#129417; Open Source</h2><p>Contributing to the community through open source software</p></div>
+      <div class="opensource-card">
+        <h3><a href="https://github.com/owldisk/owldisk" target="_blank" rel="noopener noreferrer">OwlDisk &mdash; Fast Disk Space Analyzer for macOS</a></h3>
+        <p class="role">Author & Maintainer</p>
+        <p class="description">A fast, open-source disk space analyzer built with Go and Wails. Features parallel scanning with 64 concurrent goroutines, an interactive D3 sunburst visualization, and accurate size reporting that matches macOS Finder.</p>
+        <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">Wails</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">D3.js</span><span class="tech-tag">Tailwind CSS</span></div>
+        <a href="https://github.com/owldisk/owldisk" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-top: 1.25rem; display: inline-flex;">&#128025; View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="passions">
+    <div class="container">
+      <div class="section-header"><h2>Engineering Principles</h2><p>The philosophies that guide how I build and operate systems</p></div>
+      <div class="passions-grid">
+        <div class="passion-item"><span class="passion-icon">&#128640;</span><div><h4>Cloud Native First</h4><p>Design for distributed systems from day one — ephemeral, stateless, and horizontally scalable</p></div></div>
+        <div class="passion-item"><span class="passion-icon">&#9881;&#65039;</span><div><h4>Automate Everything</h4><p>If you do it twice, automate it. Eliminate toil so engineers focus on what matters</p></div></div>
+        <div class="passion-item"><span class="passion-icon">&#128274;</span><div><h4>Shift-Left Security</h4><p>Bake security into pipelines and infrastructure — not bolt it on after the fact</p></div></div>
+        <div class="passion-item"><span class="passion-icon">&#128200;</span><div><h4>Observability-Driven</h4><p>You can't fix what you can't see. Instrument first, then build confidence to ship fast</p></div></div>
+        <div class="passion-item"><span class="passion-icon">&#129309;</span><div><h4>Immutable Infrastructure</h4><p>Never patch in place. Rebuild, replace, and roll forward with confidence</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header"><h2>Let's Connect</h2><p>I'm always interested in discussing DevOps practices, cloud architecture, or potential collaboration opportunities.</p></div>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/alvinjaison" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="icon">&#128188;</span><span>LinkedIn</span></a>
+        <a href="https://github.com/alvinjaison" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="icon">&#128025;</span><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><p>&copy; 2026 Alvin Jaison. Built with passion for DevOps.</p></div></footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+    document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
+    window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); nav.style.borderBottomColor = window.scrollY > 50 ? 'var(--border)' : 'transparent'; });
+  </script>
 </body>
 </html>
