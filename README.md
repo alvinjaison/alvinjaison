@@ -2,7 +2,7 @@
   
 # 👋 Hi, I'm Alvin Jaison
 
-### DevOps Engineer | Cloud Infrastructure Specialist
+### Senior DevOps Engineer | Cloud Infrastructure Specialist
 
 📍 London, United Kingdom
 
@@ -16,9 +16,22 @@
 
 ## 🚀 About Me
 
-I'm a passionate DevOps Engineer specializing in cloud infrastructure and automation. With expertise in building scalable, reliable, and secure systems, I help organizations streamline their development and deployment processes.
+I'm a Senior DevOps Engineer with **10+ years of experience** building, automating, and maintaining cloud infrastructure and deployment platforms.
+
+I specialize in AWS, Infrastructure as Code, containerization, CI/CD automation, and production release engineering. My focus is on making infrastructure secure, repeatable, observable, and cost-efficient.
+
+I also build developer tools and open-source software, with a particular interest in Go, automation, and cloud-native technologies.
 
 💡 **Mission:** Bridging the gap between development and operations through automation, infrastructure as code, and continuous improvement.
+
+### What I do best
+
+- ☁️ Design and manage AWS cloud infrastructure
+- 🏗️ Automate infrastructure provisioning with Terraform and CloudFormation
+- 🐳 Build and deploy containerized applications with Docker and Kubernetes
+- ⚙️ Design reliable CI/CD pipelines and deployment automation
+- 🔒 Improve cloud security, IAM, and operational reliability
+- 📊 Implement monitoring, troubleshoot production issues, and optimize cloud costs
 
 ---
 
@@ -100,7 +113,19 @@ expertise:
 
 ## 🦉 Open Source
 
-### [OwlDisk](https://owldisk.com) — Fast Disk Space Analyzer for macOS
+I'm an active open-source contributor, with contributions to [Go](https://github.com/golang/go), [GoogleTest](https://github.com/google/googletest), WorldMonitor, and several other projects — alongside the tools I build and maintain below.
+
+### � [PyGo](https://github.com/alvinjaison/PyGo) — Run Python in Go
+
+> Author · Building in public
+
+A Go library exploring how Python scripts can run inside Go applications through a pure-Go Python interpreter. I'm building PyGo in the open — working on Python runtime capabilities, Go integration, and the challenges of bringing Python execution into Go applications.
+
+[![Source](https://img.shields.io/badge/Source-GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alvinjaison/PyGo)
+
+**Tech:** `Go` `Python`
+
+### �🚀 [OwlDisk](https://owldisk.com) — Fast Disk Space Analyzer for macOS
 
 > Author & Maintainer
 

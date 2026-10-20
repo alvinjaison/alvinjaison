@@ -22,14 +22,14 @@
     "name": "Alvin Jaison",
     "url": "https://jaisonalv.in",
     "image": "https://github.com/alvinjaison.png",
-    "jobTitle": "DevOps Engineer",
+    "jobTitle": "Senior DevOps Engineer",
     "worksFor": { "@type": "Organization", "name": "Self" },
     "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "UK" },
     "sameAs": [
       "https://linkedin.com/in/alvinjaison",
       "https://github.com/alvinjaison"
     ],
-    "knowsAbout": ["DevOps", "Cloud Infrastructure", "AWS", "Terraform", "Kubernetes", "Docker", "CI/CD", "Infrastructure as Code"]
+    "knowsAbout": ["DevOps", "Cloud Infrastructure", "AWS", "Terraform", "Kubernetes", "Docker", "CI/CD", "Infrastructure as Code", "Go", "Open Source"]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,7 +163,12 @@
     .highlight-item .highlight-icon { color: var(--accent); font-size: 1.25rem; flex-shrink: 0; margin-top: 0.1rem; }
     .highlight-item p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; }
     .highlight-item strong { color: var(--text-primary); }
-    .opensource-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; max-width: 750px; margin: 0 auto; transition: all 0.3s; position: relative; overflow: hidden; }
+    .opensource-intro { max-width: 750px; margin: 0 auto 2.5rem; text-align: center; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; }
+    .opensource-intro a { color: var(--accent); text-decoration: none; }
+    .opensource-intro a:hover { text-decoration: underline; }
+    .opensource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+    .opensource-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: all 0.3s; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+    .opensource-card .tech-tags { margin-bottom: 1.25rem; }
     .opensource-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)); }
     .opensource-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
     .opensource-card h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
@@ -197,6 +202,7 @@
       <a href="#" class="nav-logo">AJ</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#whatido">What I Do</a></li>
         <li><a href="#tech">Tech Stack</a></li>
         <li><a href="#competencies">Competencies</a></li>
         <li><a href="#opensource">Open Source</a></li>
@@ -212,9 +218,9 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1>Hi, I'm <span>Alvin Jaison</span></h1>
-          <p class="subtitle">DevOps Engineer | IaC Evangelist | Cloud Architect</p>
+          <p class="subtitle">Senior DevOps Engineer | IaC Evangelist | Cloud Architect</p>
           <p class="location">&#128205; London, United Kingdom</p>
-          <p>I turn infrastructure into code, chaos into pipelines, and coffee into uptime. Specializing in cloud architecture and automation, I build systems that scale themselves, heal themselves, and let teams ship faster without the 3 a.m. pages. When I'm not wrangling clusters, I'm building applications that solve real problems.</p>
+          <p>Senior DevOps Engineer with <strong>10+ years of experience</strong> building, automating, and maintaining cloud infrastructure and deployment platforms. I specialize in AWS, Infrastructure as Code, containerization, CI/CD automation, and production release engineering &mdash; making infrastructure secure, repeatable, observable, and cost-efficient. When I'm not wrangling clusters, I build developer tools and open-source software.</p>
           <p class="mission">Bridging the gap between development and operations through automation, infrastructure as code, and continuous improvement.</p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">Let's Connect</a>
@@ -235,7 +241,7 @@
                 <div><span class="output">alvin.jaison</span></div>
                 <br>
                 <div><span class="prompt">$</span> <span class="command">cat role.txt</span></div>
-                <div><span class="output">DevOps Engineer</span></div>
+                <div><span class="output">Senior DevOps Engineer &middot; 10+ yrs</span></div>
                 <br>
                 <div><span class="prompt">$</span> <span class="command">terraform plan</span></div>
                 <div><span class="success">&#10003; Infrastructure ready</span></div>
@@ -246,6 +252,20 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="whatido">
+    <div class="container">
+      <div class="section-header"><h2>What I Do Best</h2><p>Where I spend my time and deliver the most impact</p></div>
+      <div class="highlights-list">
+        <div class="highlight-item"><span class="highlight-icon">&#9729;&#65039;</span><p><strong>Design and manage AWS cloud infrastructure</strong> across multi-account, multi-region environments</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#127959;&#65039;</span><p><strong>Automate infrastructure provisioning</strong> with Terraform and CloudFormation</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#128051;</span><p><strong>Build and deploy containerized applications</strong> with Docker and Kubernetes</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#9881;&#65039;</span><p><strong>Design reliable CI/CD pipelines</strong> and deployment automation</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#128274;</span><p><strong>Improve cloud security, IAM, and operational reliability</strong> with least-privilege and hardening</p></div>
+        <div class="highlight-item"><span class="highlight-icon">&#128200;</span><p><strong>Implement monitoring, troubleshoot production issues, and optimize cloud costs</strong></p></div>
       </div>
     </div>
   </section>
@@ -314,12 +334,22 @@
   <section id="opensource">
     <div class="container">
       <div class="section-header"><h2>&#129417; Open Source</h2><p>Contributing to the community through open source software</p></div>
-      <div class="opensource-card">
-        <h3><a href="https://github.com/owldisk/owldisk" target="_blank" rel="noopener noreferrer">OwlDisk &mdash; Fast Disk Space Analyzer for macOS</a></h3>
-        <p class="role">Author & Maintainer</p>
-        <p class="description">A fast, open-source disk space analyzer built with Go and Wails. Features parallel scanning with 64 concurrent goroutines, an interactive D3 sunburst visualization, and accurate size reporting that matches macOS Finder.</p>
-        <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">Wails</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">D3.js</span><span class="tech-tag">Tailwind CSS</span></div>
-        <a href="https://github.com/owldisk/owldisk" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-top: 1.25rem; display: inline-flex;">&#128025; View on GitHub</a>
+      <p class="opensource-intro">Active contributor to <a href="https://github.com/golang/go" target="_blank" rel="noopener noreferrer">Go</a>, <a href="https://github.com/google/googletest" target="_blank" rel="noopener noreferrer">GoogleTest</a>, WorldMonitor, and several other open-source projects &mdash; alongside the tools I build and maintain below.</p>
+      <div class="opensource-grid">
+        <div class="opensource-card">
+          <h3><a href="https://github.com/alvinjaison/PyGo" target="_blank" rel="noopener noreferrer">&#128013; PyGo &mdash; Run Python in Go</a></h3>
+          <p class="role">Author &middot; Building in public</p>
+          <p class="description">A Go library exploring how Python scripts can run inside Go applications through a pure-Go Python interpreter. I'm building PyGo in the open &mdash; working on Python runtime capabilities, Go integration, and the challenges of bringing Python execution into Go applications.</p>
+          <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">Python</span><span class="tech-tag">Interpreter</span><span class="tech-tag">Open Source</span></div>
+          <a href="https://github.com/alvinjaison/PyGo" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-top: auto; align-self: flex-start; display: inline-flex;">&#128025; View on GitHub</a>
+        </div>
+        <div class="opensource-card">
+          <h3><a href="https://github.com/owldisk/owldisk" target="_blank" rel="noopener noreferrer">&#128640; OwlDisk &mdash; Fast Disk Space Analyzer for macOS</a></h3>
+          <p class="role">Author & Maintainer</p>
+          <p class="description">A fast, open-source disk space analyzer built with Go and Wails. Features parallel scanning with 64 concurrent goroutines, an interactive D3 sunburst visualization, and accurate size reporting that matches macOS Finder.</p>
+          <div class="tech-tags"><span class="tech-tag">Go</span><span class="tech-tag">Wails</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">D3.js</span><span class="tech-tag">Tailwind CSS</span></div>
+          <a href="https://github.com/owldisk/owldisk" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-top: auto; align-self: flex-start; display: inline-flex;">&#128025; View on GitHub</a>
+        </div>
       </div>
     </div>
   </section>
